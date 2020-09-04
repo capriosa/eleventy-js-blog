@@ -20,6 +20,7 @@ module.exports = eleventyConfig =>
    * @example `${this.headTag(data)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
+
   eleventyConfig.addShortcode('headTag', function (data) {
     return `<head>
       ${this.titleTag(data)}
@@ -29,9 +30,7 @@ module.exports = eleventyConfig =>
       ${this.description(data)}
       ${this.favicon(data)}
       ${this.socialMeta(data)}
-      <style>
-        ${this.minifyCSS(this.inlineCSS(data))}
-      </style>
-      ${this.externalCSS(data)}
+      <script src="js/alpine.js"></script>
+      <link href="css/main.css" rel="stylesheet">
     </head>`
   })

@@ -4,8 +4,8 @@
   "description": "A starter project showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=production npx eleventy",
-    "dev": "ELEVENTY_ENV=development npx eleventy --serve",
+    "build": "ELEVENTY_ENV=production npx eleventy & NODE_ENV=production postcss css/main.css --o _site/css/main.css",
+    "dev": "ELEVENTY_ENV=development npx eleventy --serve & postcss css/main.css --o _tmp/main.css --watch",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -24,6 +24,16 @@
     "@11ty/eleventy": "^0.11.0",
     "clean-css": "^4.2.3",
     "html-minifier": "^4.0.0",
-    "terser": "^4.6.13"
+    "terser": "^4.6.13",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {
+    "alpinejs": "^2.6.0",
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^4.2.2",
+    "mini-css-extract-plugin": "^0.11.0",
+    "postcss-loader": "^3.0.0",
+    "tailwindcss": "^1.7.6",
+    "webpack": "^4.44.1"
   }
 }

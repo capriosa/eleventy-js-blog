@@ -43,6 +43,9 @@ module.exports = function (eleventyConfig) {
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
   eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/alpinejs/dist/alpine.js": "js/alpine.js",
+  });
 
   /**
    * Have Eleventy watch the following additional files for live browsersync

@@ -21,6 +21,8 @@ module.exports = function (data) {
       ${this.siteHeader(data)}
       ${this.nav(data.collections.nav, data.page, '', l10n.nav.primary)}
       <main id="main" class="grid gap">
+      <span x-data="{message:'🤖 Hello, this text is brought to you by alpine.js 🤓'}" x-text="message">TEST</span>
+
         ${data.content}
       </main>
       ${this.siteFooter(data)}

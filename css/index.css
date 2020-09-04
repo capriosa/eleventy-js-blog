@@ -5,8 +5,12 @@
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/--*CSS Custom Properties on MDN}
  */
 
-/* Set box-sizing for all elements */
-*:
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 *:before
 *:after {
   box-sizing: border-box;
@@ -25,14 +29,14 @@
 .grid {
   display: grid;
 }
-  
+
 .gap {
   gap: var(--base-unit);
 }
 
 body {
   grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: 1fr minmax(calc(100vw - 66ch), 66ch) 1fr; 
+  grid-template-columns: 1fr minmax(calc(100vw - 66ch), 66ch) 1fr;
   min-height: 100vh;
 }
 
