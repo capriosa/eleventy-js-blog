@@ -6,6 +6,7 @@
 
 // Require native Node.js modules
 var fs = require('fs')
+const htmlmin = require("html-minifier");
 
 /**
  * Require the includes module for the following.
@@ -72,7 +73,24 @@ module.exports = function (eleventyConfig) {
         })
       }
     }
-  })
+  }),
+
+    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+      if (
+        process.env.ELEVENTY_PRODUCTION &&
+        outputPath &&
+        outputPath.endsWith(".html")
+      ) {
+        let minified = htmlmin.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true,
+        });
+        return minified;
+      }
+
+      return content;
+    });
 
   // If you want to use an alternative file structure,
   // then you can uncomment this return statement

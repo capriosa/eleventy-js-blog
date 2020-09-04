@@ -1,8 +1,13 @@
 module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
+  purge: {
+    content: ["_site/**/*.html"],
+    options: {
+      whitelist: [],
+    },
   },
   variants: {},
   plugins: [],
-}
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+};
