@@ -43,6 +43,9 @@ module.exports = function (eleventyConfig) {
    * Copy static assets to the output directory
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
+  eleventyConfig.addWatchTarget("./_tmp/main.css");
+
+  eleventyConfig.addPassthroughCopy({ "./_tmp/main.css": "./_site/main.css" });
   eleventyConfig.addPassthroughCopy('css')
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/alpine.js": "js/alpine.js",

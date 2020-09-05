@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ["_site/**/*.html"],
+    content: ["./_site/css/main.css"],
     options: {
       whitelist: [],
     },
