@@ -5,9 +5,9 @@ require('laravel-mix-purgecss')
 
 // Paths
 const paths = {
-  sass: {
+  css: {
     source: './css/main.scss',
-    dest: 'css/'
+    dest: '_site/css/main.css'
   },
   /*javascript: {
       source: './resources/js/main.js',
@@ -35,7 +35,7 @@ mix
   // .js(paths.javascript.singles, paths.javascript.dest)
 
   // Compile SCSS & TailwindCSS
-  .sass(paths.sass.source, paths.sass.dest)
+  //.sass(paths.sass.source, paths.sass.dest)
   .options({
     processCssUrls: false,
     postCss: [tailwindcss('tailwind.config.js')]
@@ -49,7 +49,7 @@ if (mix.inProduction()) {
 
     .purgeCss({
       folders: [
-        '_site'
+        './content'
       ],
       extensions: [
         'html',
@@ -82,7 +82,7 @@ if (mix.inProduction()) {
     })
 
     // Minifies CSS & JS files
-    .minify(paths.sass.dest + 'main.css')
+    .minify(paths.css.dest + 'main.css')
   //.minify(paths.javascript.dest + 'main.js')
 
 }
