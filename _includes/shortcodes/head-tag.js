@@ -30,7 +30,7 @@ module.exports = eleventyConfig =>
       ${this.description(data)}
       ${this.favicon(data)}
       ${this.socialMeta(data)}
-      <script src="js/alpine.js"></script>
-      <link href="css/main.css" rel="stylesheet">
+      <script src="/js/alpine.js"></script>
+      <link href="/css/main.css" rel="stylesheet">
     </head>`
   })

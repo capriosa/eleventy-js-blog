@@ -7,7 +7,7 @@ require('laravel-mix-purgecss')
 const paths = {
   css: {
     source: './css/main.scss',
-    dest: '_site/css/main.css'
+    dest: '_site/css/'
   },
   /*javascript: {
       source: './resources/js/main.js',
