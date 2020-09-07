@@ -1,5 +1,6 @@
 /**
  * @file Defines a filter to minify JavaScript inline
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
@@ -27,15 +28,15 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addFilter('minifyJS', script => {
     // Only minify scripts for production
-    if(process.env.ELEVENTY_ENV === 'production') {
+    if (process.env.ELEVENTY_ENV === 'production') {
       var minified = Terser.minify(script)
-      if(minified.error) {
+      if (minified.error) {
         console.log('Terser error: ', minified.error)
         return script
       }
 
       return minified.script
     }
-    
+
     return script
   })

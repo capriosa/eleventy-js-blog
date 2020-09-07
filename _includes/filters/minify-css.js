@@ -1,5 +1,6 @@
 /**
  * @file Defines a filter to minify CSS inline
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
@@ -27,10 +28,10 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addFilter('minifyCSS', stylesheet => {
     // Only minify stylesheets for production
-    if(process.env.ELEVENTY_ENV === 'production') {
+    if (process.env.ELEVENTY_ENV === 'production') {
       minified = new CleanCSS({}).minify(stylesheet).styles
       return minified
     }
-    
+
     return stylesheet
   })

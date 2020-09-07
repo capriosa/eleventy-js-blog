@@ -1,5 +1,6 @@
 /**
  * @file Defines a filter to convert a file’s contents to a string
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 

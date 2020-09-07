@@ -1,5 +1,6 @@
 /**
  * @file Defines a filter to minify HTML template files
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
@@ -26,7 +27,7 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addTransform('minifyHTML', (content, outputPath) => {
     // Only minify HTML for production
-    if(process.env.ELEVENTY_ENV === 'production' &&
+    if (process.env.ELEVENTY_ENV === 'production' &&
       (outputPath !== false && outputPath.endsWith('.html'))) {
       var minified = htmlmin.minify(content, {
         useShortDoctype: true,

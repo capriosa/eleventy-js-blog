@@ -1,5 +1,6 @@
 /**
  * @file Imports filters and configures them with 11ty (.eleventy.js)
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 

@@ -1,5 +1,6 @@
 /**
  * @file Defines the chained template for home page
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  * @see {@link https://www.11ty.dev/docs/layouts/#layout-chaining Layout chaining in 11ty}
  */
@@ -24,9 +25,6 @@ exports.render = function (data) {
   var l10n = data.site[data.locale]
   var reversed = [...data.collections.posts.slice(-2)].reverse()
   return `<article>
-    <!-- ⬇️  Delete between this line … -->
-      ${this.gettingStarted(data)}
-    <!-- ⬆️  … and this line -->
     ${data.content}
     <h2>${l10n.postsArchive.headline}</h2>
     ${this.archive(data, reversed)}

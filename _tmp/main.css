@@ -1098,6 +1098,10 @@ video {
   clear: none;
 }
 
+.font-sans {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1161,6 +1165,10 @@ video {
 
 .ml-8 {
   margin-left: 2rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .object-contain {

@@ -1,5 +1,6 @@
 /**
  * @file Defines the base template
+ * Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#function JavaScript functions as templates in 11ty}
  */
@@ -17,15 +18,21 @@ module.exports = function (data) {
   return `<!DOCTYPE html>
   <html lang="${data.locale ? l10n.locale : data.site.defaultLocale}">
     ${this.headTag(data)}
-    <body class="grid gap no-margin">
+    <body class="font-sans">
+
+    <div id="main" class="flex flex-col items-center ">
+    <div class="max-w-4xl">
+    ${this.nav(data.collections.nav, data.page, '', l10n.nav.primary)}
       ${this.siteHeader(data)}
-      ${this.nav(data.collections.nav, data.page, '', l10n.nav.primary)}
-      <main id="main" class="grid gap">
+      <main>
       <span x-data="{message:'🤖 Hello, this text is brought to you by alpine.js 🤓'}" x-text="message">TEST</span>
 
         ${data.content}
-      </main>
+        </main>
+
+
       ${this.siteFooter(data)}
+      </div>
     </body>
   </html>`
 }
