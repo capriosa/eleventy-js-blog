@@ -20,10 +20,10 @@ exports.data = {
  * @param {Object} data 11ty’s data object
  * @return {String} The rendered template
  */
-exports.render = function (data) {
+exports.render = (data) => {
   return `<article>
-    <header class="article-header">
-      <h2 class="no-margin">${data.title}</h2>
+    <header class="">
+      <h2 class"font-bold">${data.title}</h2>
       <time>${this.pageDate(data)}</time>
     </header>
     ${data.content}

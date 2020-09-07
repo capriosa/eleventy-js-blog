@@ -21,12 +21,12 @@ exports.data = {
  * @return {String} The rendered template
  * @see {@link https://www.11ty.dev/docs/pagination/ Pagination in 11ty}
  */
-exports.render = function (data) {
+exports.render = (data) => {
   var l10n = data.site[data.locale]
   var reversed = [...data.collections.posts.slice(-2)].reverse()
   return `<article>
     ${data.content}
-    <h2>${l10n.postsArchive.headline}</h2>
+    <h2 class="font-semibold text-3xl my-3">${l10n.postsArchive.headline}</h2>
     ${this.archive(data, reversed)}
     <p><a href="${l10n.postsArchive.url}">${l10n.postsArchive.prompt}</a></p>
   </article>`

@@ -1,5 +1,6 @@
 /**
  * @file Defines a shortcode for displaying a page’s date
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  * @see {@link https://www.11ty.dev/docs/dates/}
@@ -30,6 +31,6 @@ module.exports = eleventyConfig =>
     var options = data.site[data.locale].dateOptions
     // Check that `date` is a JavaScript `Date` object.
     return Object.prototype.toString.call(date) === "[object Date]"
-      ? `${date.toLocaleDateString(locale, options)}`
+      ? `${date.toLocaleDateString(locale)}`
       : ''
   })

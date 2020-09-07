@@ -19,7 +19,7 @@ module.exports = {
   // The root for the site domain (without a trailing slash)
   baseUrl: 'https://example.com',
   // Uses this locale when one is not set in content/content.11tydata.js
-  defaultLocale: 'en-US',
+  defaultLocale: 'de-DE',
   // Localized strings and other options for English
   // To add a language, copy this object, then change the values
   en: {
@@ -73,7 +73,7 @@ module.exports = {
      */
     dateOptions: {
       year: 'numeric',
-      month: 'long',
+      month: 'short',
       day: 'numeric',
       timeZone: 'UTC'
     },

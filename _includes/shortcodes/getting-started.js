@@ -20,12 +20,11 @@ module.exports = eleventyConfig =>
    * @example `${this.gettingStarted(data)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
-  eleventyConfig.addShortcode('gettingStarted', function (data) { 
-    return `<section 
-      style="border:var(--border);padding:var(--base-unit);">
-      <h2>🎬 Get started!</h2>
+  eleventyConfig.addShortcode('gettingStarted', function (data) {
+    return `<section>
+      <h2>Get started!</h2>
       <ul>
-        <li>📝 Edit <code>./_data/site.json</code> with your site’s information</li>
+        <li>Edit <code>./_data/site.json</code> with your site’s information</li>
         <li>(Optional) 📝 Edit <code>.eleventy.js</code> with your configuration preferences</li>
         <li>❌ Delete this message from <code>./_includes/${data.layout}.11ty.js</code></li>
       </ul>

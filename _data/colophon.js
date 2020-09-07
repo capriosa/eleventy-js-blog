@@ -17,9 +17,9 @@
  */
 module.exports = {
   en: {
-    generator: 'Seven Eleven is based on the work created by <a href=\"https://twitter.com/reubenlillie\">@reubenlillie</a> with the static site generator <a href=\"https://11ty.dev/\">Eleventy, TailwindCSS and AlpineJS</a>.',
-    languages: 'Source code written in vanilla JavaScript, 🕸️ semantic HTML, 🎨 TailwindCSS and AlpineJS.',
-    git: 'Contribute on <a href=\"http://gitlab.com/reubenlillie/eleventy-dot-js-blog/\">GitLab</a>.',
+    generator: '<b>Seven Eleven</b> is based on the work created by <a href=\"https://twitter.com/reubenlillie\">@reubenlillie</a> with the static site generator <a href=\"https://11ty.dev/\">Eleventy, TailwindCSS and AlpineJS</a>.',
+    languages: 'Source code written in vanilla JavaScript, semantic HTML, TailwindCSS and AlpineJS.',
+    git: 'Contribute on eleventy-dot-js-blog <a href=\"http://gitlab.com/reubenlillie/eleventy-dot-js-blog/\">GitLab</a>.',
     host: 'Hosted on <a href=\"https://netlify.com/\">Netlify</a>.'
   }
 }

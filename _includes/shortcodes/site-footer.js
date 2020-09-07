@@ -1,5 +1,6 @@
 /**
  * @file Defines a shortcode for the page footer markup
+ *  Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  */
@@ -22,8 +23,6 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addShortcode('siteFooter', function (data) {
     return `<footer id="site_footer">
-        <p>${this.editThisPage(data)}</p>
-        <p>${this.copyrightNotice(data)}</p>
         <p>${this.colophon(data)}</p>
       </footer>`
   })
