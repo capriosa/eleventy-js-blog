@@ -1,5 +1,6 @@
 /**
  * @file Contains global data about the site author
+ * Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
@@ -16,16 +17,16 @@
  */
 module.exports = {
   name: {
-    fullName: 'Reuben L. Lillie',
-    givenName: 'Reuben',
-    surname: 'Lillie'
+    fullName: 'Meinolf Droste',
+    givenName: 'Meinolf',
+    surname: 'Droste'
   },
   social: {
     // Add or remove accounts for social media platforms
     accounts: [
       {
         name: 'GitHub',
-        url: 'https://github.com/reubenlillie/'
+        url: 'https://github.com/capriosa/'
       },
       {
         name: 'GitLab',
@@ -37,7 +38,7 @@ module.exports = {
       },
       {
         name: 'LinkedIn',
-        url: 'https://linkedin.com/in/reubenlillie/'
+        url: 'https://linkedin.com/in/mdwp-meinolf-droste/'
       },
       {
         name: 'Messenger',
@@ -45,7 +46,7 @@ module.exports = {
       },
       {
         name: 'Twitter',
-        url: 'https://twitter.com/reubenlillie/'
+        url: 'https://twitter.com/mdwp/'
       }
     ]
   }

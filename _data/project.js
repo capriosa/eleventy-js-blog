@@ -1,5 +1,6 @@
 /**
  * @file Exposes environment variables to templates
+ * Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 

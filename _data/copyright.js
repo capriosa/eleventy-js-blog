@@ -1,5 +1,6 @@
 /**
  * @file Contains global copyright data
+ * Seven Eleven is based on the work by
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
