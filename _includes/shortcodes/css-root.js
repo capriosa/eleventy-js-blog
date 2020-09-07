@@ -23,11 +23,6 @@ module.exports = eleventyConfig =>
   eleventyConfig.addShortcode('cssRoot', data =>
     `:root {
       /* Color Codes */
-      --black: ${data.colors.grayscale[900].hex};
-      --grayscale-100: ${data.colors.grayscale[100].hex};
-      --grayscale-400: ${data.colors.grayscale[400].hex};
-      --grayscale-600: ${data.colors.grayscale[600].hex};
-      --white: ${data.colors.grayscale.white.hex};
       /* Named Properties */
       --background-color: var(--white);
       --gray: var(--grayscale-600);

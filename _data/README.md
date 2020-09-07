@@ -1,4 +1,7 @@
-# eleventy-dot-js-blog/\_data
+# Seven Eleven
+Seven Eleven is based on the work by
+
+## eleventy-dot-js-blog/\_data
 
 In Eleventy, the [data directory](https://www.11ty.dev/docs/config/#directory-for-global-data-files) is meant for [global data](https://www.11ty.dev/docs/data-global/), making them available to all templates via Eleventy’s `data` object.
 

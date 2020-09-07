@@ -1,4 +1,7 @@
-# eleventy-dot-js-blog/content
+# Seven Eleven
+Seven Eleven is based on the work by
+
+## eleventy-dot-js-blog/content
 
 By default, [Eleventy works with your project’s existing directory structure](https://www.11ty.dev/docs/). Unlike other static site generators, Eleventy let’s you choose how to organize your content.
 
